@@ -2908,7 +2908,7 @@
       ]
     },
     "Remotion.Linq/2.1.1": {
-      "sha512": "IJn0BqkvwEDpP+2qjvci7n4/a9f7DhKESLWb2/uG4xQh3rTkGTBUz69bI4IivCoKkTFAqjXxYDZw2K/npohjsw==",
+      "sha512": "+HdfStb1gsTbtLzDiHuw+JPgQCfrSWddDZlHS/5Jr974BuNyiddjpF8BUUaCWBYDPrZiXfVAekXw0IMpZUKD6g==",
       "type": "package",
       "path": "remotion.linq/2.1.1",
       "files": [
@@ -3182,7 +3182,7 @@
       ]
     },
     "System.Collections.Specialized/4.3.0": {
-      "sha512": "cDNxsZEZnegrE8y8ixAOg1Sd81sFtV7rZ0JIturDAk8oPER7AX4H7VmpQRUBrTA6vEDgq5QXr8BXY/0q97bWzQ==",
+      "sha512": "Epx8PoVZR0iuOnJJDzp7pWvdfMMOAvpUo95pC4ScH2mJuXkKA2Y4aR3cG9qt2klHgSons1WFh4kcGW7cSXvrxg==",
       "type": "package",
       "path": "system.collections.specialized/4.3.0",
       "files": [
@@ -3429,7 +3429,7 @@
       ]
     },
     "System.ComponentModel.Primitives/4.3.0": {
-      "sha512": "wHI0Z1+nKHz5lKzMlGMPxG6NTK5tix0VMMCmPWY7oDu4E/lVTY1sWED2eC4NgLpgGz5t1XcoRb2WivnX9BrC6A==",
+      "sha512": "j8GUkCpM8V4d4vhLIIoBLGey2Z5bCkMVNjEZseyAlm4n5arcsJOeI3zkUP+zvZgzsbLTYh4lYeP/ZD/gdIAPrw==",
       "type": "package",
       "path": "system.componentmodel.primitives/4.3.0",
       "files": [
@@ -3466,7 +3466,7 @@
       ]
     },
     "System.ComponentModel.TypeConverter/4.3.0": {
-      "sha512": "UlHLYP+YZ8w2YxLiD6+kZMl7yYgrq70j3ogpy4lHeJsVabRoAe1HLs+JAYCwJdiLgWXvi/OtcVU/xSMr0tAF3A==",
+      "sha512": "16pQ6P+EdhcXzPiEK4kbA953Fu0MNG2ovxTZU81/qsCd1zPRsKc3uif5NgvllCY598k6bI0KUyKW8fanlfaDQg==",
       "type": "package",
       "path": "system.componentmodel.typeconverter/4.3.0",
       "files": [
@@ -5297,7 +5297,7 @@
       ]
     },
     "System.Runtime.Loader/4.3.0": {
-      "sha512": "Eyl8W9vO4XvLGAcslKdleM9PP0M7T4NHD53BzCEC2RMtIhWmkVmLwZzkXQi3arTWYOiTJuntEM+WdD4c9lS8mw==",
+      "sha512": "DHMaRn8D8YCK2GG2pw+UzNxn/OHVfaWx7OTLBD/hPegHZZgcZh3H6seWegrC4BYwsfuGrywIuT+MQs+rPqRLTQ==",
       "type": "package",
       "path": "system.runtime.loader/4.3.0",
       "files": [
@@ -5384,7 +5384,7 @@
       ]
     },
     "System.Runtime.Serialization.Primitives/4.3.0": {
-      "sha512": "a6CBKJJQr5DRo1pM5Ta3ak43fpqnszBW8qAN/48/JatIFs23txgeINsSBj3INbOUd7bekoe6e0KP3dShb8YHQQ==",
+      "sha512": "Wz+0KOukJGAlXjtKr+5Xpuxf8+c8739RI1C+A2BoQZT+wMCCoMDDdO8/4IRHfaVINqL78GO8dW8G2lW/e45Mcw==",
       "type": "package",
       "path": "system.runtime.serialization.primitives/4.3.0",
       "files": [
@@ -6232,23 +6232,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Skúli Þór\\.nuget\\packages\\": {},
+    "C:\\Users\\LAIART\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Skúli Þór\\Documents\\Vefþjónustur-kennsla\\Ég-gamalt\\week_05_assignment-base\\Tests\\Tests.csproj",
+      "projectUniqueName": "C:\\Users\\LAIART\\Documents\\HR\\Vefþjónustur\\Verkefni4\\VEFT-ASS4\\tests\\Tests.csproj",
       "projectName": "Tests",
-      "projectPath": "C:\\Users\\Skúli Þór\\Documents\\Vefþjónustur-kennsla\\Ég-gamalt\\week_05_assignment-base\\Tests\\Tests.csproj",
-      "packagesPath": "C:\\Users\\Skúli Þór\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Skúli Þór\\Documents\\Vefþjónustur-kennsla\\Ég-gamalt\\week_05_assignment-base\\Tests\\obj\\",
+      "projectPath": "C:\\Users\\LAIART\\Documents\\HR\\Vefþjónustur\\Verkefni4\\VEFT-ASS4\\tests\\Tests.csproj",
+      "packagesPath": "C:\\Users\\LAIART\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\LAIART\\Documents\\HR\\Vefþjónustur\\Verkefni4\\VEFT-ASS4\\tests\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\Skúli Þór\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\LAIART\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -6261,11 +6261,11 @@
       "frameworks": {
         "netcoreapp2.0": {
           "projectReferences": {
-            "C:\\Users\\Skúli Þór\\Documents\\Vefþjónustur-kennsla\\Ég-gamalt\\week_05_assignment-base\\Services\\Services.csproj": {
-              "projectPath": "C:\\Users\\Skúli Þór\\Documents\\Vefþjónustur-kennsla\\Ég-gamalt\\week_05_assignment-base\\Services\\Services.csproj"
+            "C:\\Users\\LAIART\\Documents\\HR\\Vefþjónustur\\Verkefni4\\VEFT-ASS4\\Services\\Services.csproj": {
+              "projectPath": "C:\\Users\\LAIART\\Documents\\HR\\Vefþjónustur\\Verkefni4\\VEFT-ASS4\\Services\\Services.csproj"
             },
-            "C:\\Users\\Skúli Þór\\Documents\\Vefþjónustur-kennsla\\Ég-gamalt\\week_05_assignment-base\\Models\\Models.csproj": {
-              "projectPath": "C:\\Users\\Skúli Þór\\Documents\\Vefþjónustur-kennsla\\Ég-gamalt\\week_05_assignment-base\\Models\\Models.csproj"
+            "C:\\Users\\LAIART\\Documents\\HR\\Vefþjónustur\\Verkefni4\\VEFT-ASS4\\Models\\Models.csproj": {
+              "projectPath": "C:\\Users\\LAIART\\Documents\\HR\\Vefþjónustur\\Verkefni4\\VEFT-ASS4\\Models\\Models.csproj"
             }
           }
         }

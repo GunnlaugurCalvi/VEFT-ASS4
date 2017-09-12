@@ -19,9 +19,11 @@ namespace CoursesAPI.Tests.Services
 
 		private const string SSN_DABS    = "1203735289";
 		private const string SSN_GUNNA   = "1234567890";
+		private const string SSN_ARNOR   = "1601872989";
 		private const string INVALID_SSN = "9876543210";
 
 		private const string NAME_GUNNA  = "Guðrún Guðmundsdóttir";
+		private const string NAME_ARNOR  = "Arnór Þrastarson";
 
 		private const int COURSEID_VEFT_20153 = 1337;
 		private const int COURSEID_VEFT_20163 = 1338;
@@ -50,6 +52,13 @@ namespace CoursesAPI.Tests.Services
 					Name  = NAME_GUNNA,
 					SSN   = SSN_GUNNA,
 					Email = "gunna@ru.is"
+				},
+				new Person
+				{
+					ID    = 3,
+					Name  = NAME_ARNOR,
+					SSN   = SSN_ARNOR,
+					Email = "arnor15@ru.is"
 				}
 			};
 			#endregion
@@ -91,6 +100,13 @@ namespace CoursesAPI.Tests.Services
 				new TeacherRegistration
 				{
 					ID               = 101,
+					CourseInstanceID = COURSEID_VEFT_20153,
+					SSN              = SSN_DABS,
+					Type             = TeacherType.MainTeacher
+				},
+				new TeacherRegistration
+				{
+					ID               = 102,
 					CourseInstanceID = COURSEID_VEFT_20153,
 					SSN              = SSN_DABS,
 					Type             = TeacherType.MainTeacher
@@ -180,8 +196,25 @@ namespace CoursesAPI.Tests.Services
 				SSN  = SSN_GUNNA,
 				Type = TeacherType.AssistantTeacher
 			};
+			var prevCount = _teacherRegistrations.Count;
 
 			// Act:
+				var dto = _service.AddTeacherToCourse(INVALID_COURSEID, model);
+				
+				// Assert:
+
+				// Check that the dto object is correctly populated:
+				Assert.AreEqual(SSN_GUNNA, dto.SSN);
+				Assert.AreEqual(NAME_GUNNA, dto.Name);
+
+				// Get access to the entity object and assert that
+				// the properties have been set:
+				var newEntity = _teacherRegistrations.Last();
+				Assert.AreEqual(INVALID_COURSEID, newEntity.CourseInstanceID);
+
+				// Ensure that the Unit Of Work object has been instructed
+				// to save the new entity object:
+				Assert.IsTrue(_mockUnitOfWork.GetSaveCallCount() > 0);
 		}
 
 		/// <summary>
@@ -200,6 +233,22 @@ namespace CoursesAPI.Tests.Services
 			};
 
 			// Act: 
+			var dto = _service.AddTeacherToCourse(COURSEID_VEFT_20163, model);
+				
+			// Assert:
+
+			// Check that the dto object is correctly populated:
+			Assert.AreEqual(SSN_GUNNA, dto.SSN);
+			Assert.AreEqual(NAME_GUNNA, dto.Name);
+
+			// Get access to the entity object and assert that
+			// the properties have been set:
+			var newEntity = _teacherRegistrations.Last();
+			Assert.AreEqual(COURSEID_VEFT_20163, newEntity.CourseInstanceID);
+
+			// Ensure that the Unit Of Work object has been instructed
+			// to save the new entity object:
+			Assert.IsTrue(_mockUnitOfWork.GetSaveCallCount() > 0);
 		}
 
 		/// <summary>
@@ -214,12 +263,44 @@ namespace CoursesAPI.Tests.Services
 			// Arrange:
 			var model = new AddTeacherViewModel
 			{
+				SSN  = SSN_ARNOR,
+				Type = TeacherType.MainTeacher
+			};
+
+			var model2 = new AddTeacherViewModel
+			{
 				SSN  = SSN_GUNNA,
 				Type = TeacherType.MainTeacher
 			};
 			
 
 			// Act:
+			var dto = _service.AddTeacherToCourse(COURSEID_VEFT_20163, model);
+			var dto2 = _service.AddTeacherToCourse(COURSEID_VEFT_20163, model2);
+
+				
+			// Assert:
+
+			// Check that the dto object is correctly populated:
+			Assert.AreEqual(SSN_GUNNA, dto2.SSN);
+			Assert.AreEqual(NAME_GUNNA, dto2.Name);
+			Assert.AreEqual(SSN_ARNOR, dto.SSN);
+			Assert.AreEqual(NAME_ARNOR, dto.Name);
+
+			// Get access to the entity object and assert that
+			// the properties have been set:
+			var newEntity = _teacherRegistrations.First();
+			//Assert.AreEqual(COURSEID_VEFT_20163, newEntity.CourseInstanceID);
+
+			var newEntity2 = _teacherRegistrations.Last();
+			//Assert.AreEqual(newEntity.Type, newEntity2.Type);
+			Assert.
+
+			// Ensure that the Unit Of Work object has been instructed
+			// to save the new entity object:
+			Assert.IsTrue(_mockUnitOfWork.GetSaveCallCount() > 0);
+
+
 		}
 
 		/// <summary>
