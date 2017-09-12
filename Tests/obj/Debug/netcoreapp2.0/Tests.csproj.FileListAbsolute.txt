@@ -1,0 +1,34 @@
+C:\Users\bjorgvinb\Desktop\vefthjonustur\vika_5\week_05_assignment\Tests\bin\Debug\netcoreapp2.0\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+C:\Users\bjorgvinb\Desktop\vefthjonustur\vika_5\week_05_assignment\Tests\bin\Debug\netcoreapp2.0\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+C:\Users\bjorgvinb\Desktop\vefthjonustur\vika_5\week_05_assignment\Tests\bin\Debug\netcoreapp2.0\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+C:\Users\bjorgvinb\Desktop\vefthjonustur\vika_5\week_05_assignment\Tests\bin\Debug\netcoreapp2.0\Tests.deps.json
+C:\Users\bjorgvinb\Desktop\vefthjonustur\vika_5\week_05_assignment\Tests\bin\Debug\netcoreapp2.0\Tests.runtimeconfig.json
+C:\Users\bjorgvinb\Desktop\vefthjonustur\vika_5\week_05_assignment\Tests\bin\Debug\netcoreapp2.0\Tests.runtimeconfig.dev.json
+C:\Users\bjorgvinb\Desktop\vefthjonustur\vika_5\week_05_assignment\Tests\bin\Debug\netcoreapp2.0\Tests.dll
+C:\Users\bjorgvinb\Desktop\vefthjonustur\vika_5\week_05_assignment\Tests\bin\Debug\netcoreapp2.0\Tests.pdb
+C:\Users\bjorgvinb\Desktop\vefthjonustur\vika_5\week_05_assignment\Tests\bin\Debug\netcoreapp2.0\Models.dll
+C:\Users\bjorgvinb\Desktop\vefthjonustur\vika_5\week_05_assignment\Tests\bin\Debug\netcoreapp2.0\Services.dll
+C:\Users\bjorgvinb\Desktop\vefthjonustur\vika_5\week_05_assignment\Tests\bin\Debug\netcoreapp2.0\Services.pdb
+C:\Users\bjorgvinb\Desktop\vefthjonustur\vika_5\week_05_assignment\Tests\bin\Debug\netcoreapp2.0\Models.pdb
+C:\Users\bjorgvinb\Desktop\vefthjonustur\vika_5\week_05_assignment\Tests\obj\Debug\netcoreapp2.0\Tests.csproj.CoreCompileInputs.cache
+C:\Users\bjorgvinb\Desktop\vefthjonustur\vika_5\week_05_assignment\Tests\obj\Debug\netcoreapp2.0\Tests.AssemblyInfoInputs.cache
+C:\Users\bjorgvinb\Desktop\vefthjonustur\vika_5\week_05_assignment\Tests\obj\Debug\netcoreapp2.0\Tests.AssemblyInfo.cs
+C:\Users\bjorgvinb\Desktop\vefthjonustur\vika_5\week_05_assignment\Tests\obj\Debug\netcoreapp2.0\Tests.dll
+C:\Users\bjorgvinb\Desktop\vefthjonustur\vika_5\week_05_assignment\Tests\obj\Debug\netcoreapp2.0\Tests.pdb
+C:\Users\Skúli Þór\Documents\Vefþjónustur-kennsla\Ég-gamalt\week_05_assignment-base\Tests\bin\Debug\netcoreapp2.0\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+C:\Users\Skúli Þór\Documents\Vefþjónustur-kennsla\Ég-gamalt\week_05_assignment-base\Tests\bin\Debug\netcoreapp2.0\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+C:\Users\Skúli Þór\Documents\Vefþjónustur-kennsla\Ég-gamalt\week_05_assignment-base\Tests\bin\Debug\netcoreapp2.0\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+C:\Users\Skúli Þór\Documents\Vefþjónustur-kennsla\Ég-gamalt\week_05_assignment-base\Tests\bin\Debug\netcoreapp2.0\Tests.deps.json
+C:\Users\Skúli Þór\Documents\Vefþjónustur-kennsla\Ég-gamalt\week_05_assignment-base\Tests\bin\Debug\netcoreapp2.0\Tests.runtimeconfig.json
+C:\Users\Skúli Þór\Documents\Vefþjónustur-kennsla\Ég-gamalt\week_05_assignment-base\Tests\bin\Debug\netcoreapp2.0\Tests.runtimeconfig.dev.json
+C:\Users\Skúli Þór\Documents\Vefþjónustur-kennsla\Ég-gamalt\week_05_assignment-base\Tests\bin\Debug\netcoreapp2.0\Tests.dll
+C:\Users\Skúli Þór\Documents\Vefþjónustur-kennsla\Ég-gamalt\week_05_assignment-base\Tests\bin\Debug\netcoreapp2.0\Tests.pdb
+C:\Users\Skúli Þór\Documents\Vefþjónustur-kennsla\Ég-gamalt\week_05_assignment-base\Tests\bin\Debug\netcoreapp2.0\Models.dll
+C:\Users\Skúli Þór\Documents\Vefþjónustur-kennsla\Ég-gamalt\week_05_assignment-base\Tests\bin\Debug\netcoreapp2.0\Services.dll
+C:\Users\Skúli Þór\Documents\Vefþjónustur-kennsla\Ég-gamalt\week_05_assignment-base\Tests\bin\Debug\netcoreapp2.0\Services.pdb
+C:\Users\Skúli Þór\Documents\Vefþjónustur-kennsla\Ég-gamalt\week_05_assignment-base\Tests\bin\Debug\netcoreapp2.0\Models.pdb
+C:\Users\Skúli Þór\Documents\Vefþjónustur-kennsla\Ég-gamalt\week_05_assignment-base\Tests\obj\Debug\netcoreapp2.0\Tests.csproj.CoreCompileInputs.cache
+C:\Users\Skúli Þór\Documents\Vefþjónustur-kennsla\Ég-gamalt\week_05_assignment-base\Tests\obj\Debug\netcoreapp2.0\Tests.AssemblyInfoInputs.cache
+C:\Users\Skúli Þór\Documents\Vefþjónustur-kennsla\Ég-gamalt\week_05_assignment-base\Tests\obj\Debug\netcoreapp2.0\Tests.AssemblyInfo.cs
+C:\Users\Skúli Þór\Documents\Vefþjónustur-kennsla\Ég-gamalt\week_05_assignment-base\Tests\obj\Debug\netcoreapp2.0\Tests.dll
+C:\Users\Skúli Þór\Documents\Vefþjónustur-kennsla\Ég-gamalt\week_05_assignment-base\Tests\obj\Debug\netcoreapp2.0\Tests.pdb

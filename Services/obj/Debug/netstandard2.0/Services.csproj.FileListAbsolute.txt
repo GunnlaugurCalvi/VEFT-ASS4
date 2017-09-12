@@ -1,0 +1,20 @@
+C:\Users\bjorgvinb\Desktop\vefthjonustur\vika_5\week_05_assignment\Services\obj\Debug\netstandard2.0\Services.csproj.CoreCompileInputs.cache
+C:\Users\bjorgvinb\Desktop\vefthjonustur\vika_5\week_05_assignment\Services\obj\Debug\netstandard2.0\Services.AssemblyInfoInputs.cache
+C:\Users\bjorgvinb\Desktop\vefthjonustur\vika_5\week_05_assignment\Services\obj\Debug\netstandard2.0\Services.AssemblyInfo.cs
+C:\Users\bjorgvinb\Desktop\vefthjonustur\vika_5\week_05_assignment\Services\bin\Debug\netstandard2.0\models.dll
+C:\Users\bjorgvinb\Desktop\vefthjonustur\vika_5\week_05_assignment\Services\bin\Debug\netstandard2.0\models.pdb
+C:\Users\bjorgvinb\Desktop\vefthjonustur\vika_5\week_05_assignment\Services\obj\Debug\netstandard2.0\Services.dll
+C:\Users\bjorgvinb\Desktop\vefthjonustur\vika_5\week_05_assignment\Services\obj\Debug\netstandard2.0\Services.pdb
+C:\Users\bjorgvinb\Desktop\vefthjonustur\vika_5\week_05_assignment\Services\bin\Debug\netstandard2.0\Services.deps.json
+C:\Users\bjorgvinb\Desktop\vefthjonustur\vika_5\week_05_assignment\Services\bin\Debug\netstandard2.0\Services.dll
+C:\Users\bjorgvinb\Desktop\vefthjonustur\vika_5\week_05_assignment\Services\bin\Debug\netstandard2.0\Services.pdb
+C:\Users\Skúli Þór\Documents\Vefþjónustur-kennsla\Ég-gamalt\week_05_assignment-base\Services\bin\Debug\netstandard2.0\Services.deps.json
+C:\Users\Skúli Þór\Documents\Vefþjónustur-kennsla\Ég-gamalt\week_05_assignment-base\Services\bin\Debug\netstandard2.0\Services.dll
+C:\Users\Skúli Þór\Documents\Vefþjónustur-kennsla\Ég-gamalt\week_05_assignment-base\Services\bin\Debug\netstandard2.0\Services.pdb
+C:\Users\Skúli Þór\Documents\Vefþjónustur-kennsla\Ég-gamalt\week_05_assignment-base\Services\bin\Debug\netstandard2.0\Models.dll
+C:\Users\Skúli Þór\Documents\Vefþjónustur-kennsla\Ég-gamalt\week_05_assignment-base\Services\bin\Debug\netstandard2.0\Models.pdb
+C:\Users\Skúli Þór\Documents\Vefþjónustur-kennsla\Ég-gamalt\week_05_assignment-base\Services\obj\Debug\netstandard2.0\Services.csproj.CoreCompileInputs.cache
+C:\Users\Skúli Þór\Documents\Vefþjónustur-kennsla\Ég-gamalt\week_05_assignment-base\Services\obj\Debug\netstandard2.0\Services.AssemblyInfoInputs.cache
+C:\Users\Skúli Þór\Documents\Vefþjónustur-kennsla\Ég-gamalt\week_05_assignment-base\Services\obj\Debug\netstandard2.0\Services.AssemblyInfo.cs
+C:\Users\Skúli Þór\Documents\Vefþjónustur-kennsla\Ég-gamalt\week_05_assignment-base\Services\obj\Debug\netstandard2.0\Services.dll
+C:\Users\Skúli Þór\Documents\Vefþjónustur-kennsla\Ég-gamalt\week_05_assignment-base\Services\obj\Debug\netstandard2.0\Services.pdb
