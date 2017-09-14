@@ -30,6 +30,7 @@ namespace CoursesAPI.Tests.Services
 
 		private const int COURSEID_VEFT_20153 = 1337;
 		private const int COURSEID_VEFT_20163 = 1338;
+		private const int COURSEID_TOLH_20153 = 31337;
 		private const int INVALID_COURSEID    = 9999;
 
 		[TestInitialize]
@@ -82,6 +83,12 @@ namespace CoursesAPI.Tests.Services
 					CourseID    = "T-514-VEFT",
 					Description = "Í þessum áfanga verður fjallað um vefþj...",
 					Name        = "Vefþjónustur"
+				},
+				new CourseTemplate
+				{
+					CourseID	= "T-TOLH-111",
+					Description	= "uuu bitflippa maska off fuck ur mask off",
+					Name		= "Tolvuhogun"
 				}
 			};
 			#endregion
@@ -100,6 +107,12 @@ namespace CoursesAPI.Tests.Services
 					ID         = COURSEID_VEFT_20163,
 					CourseID   = "T-514-VEFT",
 					SemesterID = "20163"
+				},
+				new CourseInstance
+				{
+					ID			= COURSEID_TOLH_20153,
+					CourseID	= "T-TOLH-111",
+					SemesterID	= "20153"
 				}
 			};
 			#endregion
@@ -120,6 +133,13 @@ namespace CoursesAPI.Tests.Services
 					CourseInstanceID = COURSEID_VEFT_20153,
 					SSN              = SSN_DABS,
 					Type             = TeacherType.MainTeacher
+				},
+				new TeacherRegistration
+				{
+					ID				 = 103,
+					CourseInstanceID = COURSEID_TOLH_20153,
+					SSN				 = SSN_GULLI,
+					Type			 = TeacherType.AssistantTeacher
 				}
 			};
 			#endregion
@@ -143,7 +163,7 @@ namespace CoursesAPI.Tests.Services
 		public void GetCoursesBySemester_ReturnsEmptyListWhenNoDataDefined()
 		{
 			// Arrange:
-
+			
 			// Act:
 
 			// Assert:
