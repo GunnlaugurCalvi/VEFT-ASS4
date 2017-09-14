@@ -20,10 +20,13 @@ namespace CoursesAPI.Tests.Services
 		private const string SSN_DABS    = "1203735289";
 		private const string SSN_GUNNA   = "1234567890";
 		private const string SSN_ARNOR   = "1601872989";
+		private const string SSN_GULLI   = "1707952889";
+
 		private const string INVALID_SSN = "9876543210";
 
 		private const string NAME_GUNNA  = "Guðrún Guðmundsdóttir";
 		private const string NAME_ARNOR  = "Arnór Þrastarson";
+		private const string NAME_GULLI  = "Gunnlaugur Kristinn Hreidarsson";
 
 		private const int COURSEID_VEFT_20153 = 1337;
 		private const int COURSEID_VEFT_20163 = 1338;
@@ -59,6 +62,13 @@ namespace CoursesAPI.Tests.Services
 					Name  = NAME_ARNOR,
 					SSN   = SSN_ARNOR,
 					Email = "arnor15@ru.is"
+				},
+				new Person
+				{
+					ID 		= 4,
+					Name 	= NAME_GULLI,
+					SSN		= SSN_GULLI,
+					Email 	= "Gunnlaugur15@ru.is"
 				}
 			};
 			#endregion
@@ -180,7 +190,7 @@ namespace CoursesAPI.Tests.Services
 			Assert.AreEqual(COURSEID_VEFT_20163, newEntity.CourseInstanceID);
 			Assert.AreEqual(SSN_GUNNA, newEntity.SSN);
 			Assert.AreEqual(TeacherType.MainTeacher, newEntity.Type);
-
+			
 			// Ensure that the Unit Of Work object has been instructed
 			// to save the new entity object:
 			Assert.IsTrue(_mockUnitOfWork.GetSaveCallCount() > 0);
@@ -275,6 +285,7 @@ namespace CoursesAPI.Tests.Services
 			
 
 			// Act:
+
 			var dto = _service.AddTeacherToCourse(COURSEID_VEFT_20163, model);
 			var dto2 = _service.AddTeacherToCourse(COURSEID_VEFT_20163, model2);
 
@@ -290,12 +301,8 @@ namespace CoursesAPI.Tests.Services
 			// Get access to the entity object and assert that
 			// the properties have been set:
 			var newEntity = _teacherRegistrations.First();
-			//Assert.AreEqual(COURSEID_VEFT_20163, newEntity.CourseInstanceID);
 
-			var newEntity2 = _teacherRegistrations.Last();
-			//Assert.AreEqual(newEntity.Type, newEntity2.Type);
-			Assert.
-
+			Assert.IsNull(newEntity.Type);
 			// Ensure that the Unit Of Work object has been instructed
 			// to save the new entity object:
 			Assert.IsTrue(_mockUnitOfWork.GetSaveCallCount() > 0);
@@ -320,6 +327,18 @@ namespace CoursesAPI.Tests.Services
 			};
 
 			// Act:
+			var dto = _service.AddTeacherToCourse(COURSEID_VEFT_20163, model);
+
+			// Assert:
+
+			Assert.AreEqual(SSN_DABS, dto.SSN);
+			Assert.AreEqual("Daníel B. Sigurgeirsson", dto.Name);
+
+			var newEntity = _service.AddTeacherToCourse(COURSEID_VEFT_20163, model);
+
+
+			Assert.IsNull(newEntity);
+			Assert.IsTrue(_mockUnitOfWork.GetSaveCallCount() > 0);
 
 		}
 

@@ -47,6 +47,18 @@ namespace CoursesAPI.Services.CoursesServices
 						where t.CourseInstanceID == courseInstanceID &&
 						t.Type.Equals(1)
 						select t).Count(); 
+			
+			var mainTdup = (from t1 in _teacherRegistrations.All()
+							where t1.CourseInstanceID == courseInstanceID &&
+							t1.Type == TeacherType.MainTeacher
+							select t1).SingleOrDefault();
+
+			var teacherIsTeaching = (from t2 in _teacherRegistrations.All()
+									where t2.CourseInstanceID == courseInstanceID &&
+									t2.SSN == model.SSN
+									select t2).SingleOrDefault();
+			
+
 
 			// Check if course exists
 			if(courseInstanceID == 9999)
@@ -56,11 +68,14 @@ namespace CoursesAPI.Services.CoursesServices
 			}else if(model.SSN == "9876543210")
 			{
 				throw new AppObjectNotFoundException();
-			}else if(mainT > 1)
-			{
+			}
+			if(mainTdup != null){
 				throw new AppValidationException("This town is not big enough for two main teachers!");
 			}
-
+			if(teacherIsTeaching != null)
+			{
+				throw new AppValidationException("Yoo maan you already teaching this couursee cmoon maan");
+			}
 			_teacherRegistrations.Add(newTeacher);
 
 			_uow.Save();
