@@ -6238,11 +6238,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\gulli\\Documents\\Vefthjonustur\\VEFT-ASS4\\Tests\\Tests.csproj",
+      "projectUniqueName": "C:\\Users\\gulli\\Documents\\Vefthjonustur\\VEFT-ASS4\\tests\\Tests.csproj",
       "projectName": "Tests",
-      "projectPath": "C:\\Users\\gulli\\Documents\\Vefthjonustur\\VEFT-ASS4\\Tests\\Tests.csproj",
+      "projectPath": "C:\\Users\\gulli\\Documents\\Vefthjonustur\\VEFT-ASS4\\tests\\Tests.csproj",
       "packagesPath": "C:\\Users\\gulli\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\gulli\\Documents\\Vefthjonustur\\VEFT-ASS4\\Tests\\obj\\",
+      "outputPath": "C:\\Users\\gulli\\Documents\\Vefthjonustur\\VEFT-ASS4\\tests\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

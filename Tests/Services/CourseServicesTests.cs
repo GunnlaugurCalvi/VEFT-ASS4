@@ -163,15 +163,36 @@ namespace CoursesAPI.Tests.Services
 		public void GetCoursesBySemester_ReturnsEmptyListWhenNoDataDefined()
 		{
 			// Arrange:
-			
-			// Act:
+			var course = new CourseInstanceDTO
+			{
+				CourseInstanceID	= COURSEID_TOLH_20153,
+				TemplateID 			= "T-TOLH-111",
+				Name 			 	= "Tolvuhogun",
+				MainTeacher			= NAME_GULLI
+			};
 
+			// Act:
+			List<CourseInstanceDTO> empty = new List<CourseInstanceDTO>();
+
+			var dto = _service.GetCourseInstancesBySemester("20173");
 			// Assert:
-			// Assert.True(true);
+			Assert.AreNotEqual(dto, empty);
 		}
 
 		// TODO!!! you should write more unit tests here!
+		[TestMethod]
+		public void GetCourseInstancesBySemester_ReturnsAllCoursesForSemester()
+		{
+			var course = _service.GetCourseInstancesBySemester("20153");
+			var courseData = _service.GetCourseInstancesBySemester("20153").SingleOrDefault(x => x.TemplateID == "T-514-VEFT");
 
+
+			Assert.AreEqual(course.Count(), 2);
+
+			Assert.AreEqual(COURSEID_VEFT_20153, courseData.CourseInstanceID);
+			Assert.AreEqual("Vefþjónustur", courseData.Name);
+
+		}
 		#endregion
 
 		#region AddTeacher
