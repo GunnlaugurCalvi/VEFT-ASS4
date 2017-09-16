@@ -31,6 +31,7 @@ namespace CoursesAPI.Tests.Services
 		private const int COURSEID_VEFT_20153 = 1337;
 		private const int COURSEID_VEFT_20163 = 1338;
 		private const int COURSEID_TOLH_20171 = 31337;
+		private const int COURSEID_SAMSK_20103 = 4242;
 		private const int INVALID_COURSEID    = 9999;
 
 		[TestInitialize]
@@ -89,6 +90,12 @@ namespace CoursesAPI.Tests.Services
 					CourseID	= "T-111-TOLH",
 					Description	= "I thessum afanga verdur fjallad um bitflips",
 					Name		= "Tolvuhogun"
+				},
+				new CourseTemplate
+				{
+					CourseID 	= "T-69-SAMSK",
+					Description	= "Í þessum áfanga verður fjallað um Samsk...",
+					Name		= "Samskiptaskipti"
 				}
 			};
 			#endregion
@@ -112,7 +119,13 @@ namespace CoursesAPI.Tests.Services
 				{
 					ID			= COURSEID_TOLH_20171,
 					CourseID	= "T-111-TOLH",
-					SemesterID	= "20153"
+					SemesterID	= "20171"
+				},
+				new CourseInstance
+				{
+					ID			= COURSEID_SAMSK_20103,
+					CourseID	= "T-69-SAMSK",
+					SemesterID	= "20103"
 				}
 			};
 			#endregion
@@ -129,17 +142,17 @@ namespace CoursesAPI.Tests.Services
 				},
 				new TeacherRegistration
 				{
-					ID               = 102,
-					CourseInstanceID = COURSEID_VEFT_20153,
-					SSN              = SSN_DABS,
-					Type             = TeacherType.MainTeacher
+					ID 					= 102,
+					CourseInstanceID	= COURSEID_TOLH_20171,
+					SSN					= SSN_GULLI,
+					Type				= TeacherType.MainTeacher
 				},
 				new TeacherRegistration
 				{
-					ID				 = 103,
-					CourseInstanceID = COURSEID_TOLH_20171,
-					SSN				 = SSN_GULLI,
-					Type			 = TeacherType.MainTeacher
+					ID					= 103,
+					CourseInstanceID	= COURSEID_SAMSK_20103,
+					SSN					= SSN_GUNNA,
+					Type				= TeacherType.AssistantTeacher
 				}
 			};
 			#endregion
@@ -187,13 +200,13 @@ namespace CoursesAPI.Tests.Services
 		[TestMethod]
 		public void GetCourseInstancesBySemester_ReturnsAllCoursesForSemester()
 		{
-			var course = _service.GetCourseInstancesBySemester("20153");
-			var courseData = _service.GetCourseInstancesBySemester("20153").SingleOrDefault(x => x.TemplateID == "T-514-VEFT");
+			var course = _service.GetCourseInstancesBySemester("20171");
+			var courseData = _service.GetCourseInstancesBySemester("20171").SingleOrDefault(x => x.TemplateID == "T-111-TOLH");
 
-			Assert.AreEqual(course.Count(), 2);
+			Assert.AreEqual(course.Count(), 1);
 
-			Assert.AreEqual(COURSEID_VEFT_20153, courseData.CourseInstanceID);
-			Assert.AreEqual("Vefþjónustur", courseData.Name);
+			Assert.AreEqual(COURSEID_TOLH_20171, courseData.CourseInstanceID);
+			Assert.AreEqual("Tolvuhogun", courseData.Name);
 
 			var invalidCourse = _service.GetCourseInstancesBySemester("696969");
 
@@ -208,8 +221,31 @@ namespace CoursesAPI.Tests.Services
 		{
 			var course = _service.GetCourseInstancesBySemester();
 
-			var courseData = _service.GetCourseInstancesBySemester().SingleOrDefault(x => x.TemplateID == "VEFT-514-VEFT");
+			Assert.AreEqual(course.Count, 1);
+		}
 
+
+		/// <summary>
+		/// 
+		/// </summary>
+		/// <param name="above"></param>
+		/// <returns></returns>
+		[TestMethod]
+		public void GetCourseInstancesBySemester_ReturnMainTeacherNameOfCourse()
+		{
+			var TeacherNameOfVEFT = _service.GetCourseInstancesBySemester("20153");
+			var TeacherNameOfTOLH = _service.GetCourseInstancesBySemester("20171");
+			Assert.AreEqual("Daníel B. Sigurgeirsson", TeacherNameOfVEFT[0].MainTeacher);
+			Assert.AreEqual(NAME_GULLI, TeacherNameOfTOLH[0].MainTeacher);
+
+		}
+
+		[TestMethod]
+		public void GetCourseInstancesBySemester_ReturnEmptyNameIfNoMainTeacher()
+		{
+			var NoName = _service.GetCourseInstancesBySemester("20103");
+
+			Assert.AreEqual("", NoName[0].MainTeacher);
 		}
 		#endregion
 

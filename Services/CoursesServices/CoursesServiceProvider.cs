@@ -114,13 +114,19 @@ namespace CoursesAPI.Services.CoursesServices
 					Name               = ct.Name,
 					TemplateID         = ct.CourseID,
 					CourseInstanceID   = c.ID,
-					MainTeacher        = (from t in _teacherRegistrations.All()
-											join  p in _persons.All() on t.SSN equals p.SSN
-											where t.Type.Equals(1) &&
-											p.ID == t.ID
-											select p.Name
-											).SingleOrDefault()
+					MainTeacher        = ""
 				}).ToList();
+
+			foreach(var course in courses){				 
+				course.MainTeacher = (
+					from p in _persons.All()
+					join tr in _teacherRegistrations.All() on p.SSN equals tr.SSN
+					where tr.CourseInstanceID == course.CourseInstanceID &&
+					tr.Type.Equals(1)
+					select p.Name
+				).SingleOrDefault() ?? "";
+			}
+
 
 			return courses;
 		}

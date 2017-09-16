@@ -12575,11 +12575,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\gulli\\Documents\\Vefthjonustur\\VEFT-ASS4\\API\\API.csproj",
+      "projectUniqueName": "c:\\Users\\gulli\\Documents\\Vefthjonustur\\VEFT-ASS4\\API\\API.csproj",
       "projectName": "API",
-      "projectPath": "C:\\Users\\gulli\\Documents\\Vefthjonustur\\VEFT-ASS4\\API\\API.csproj",
+      "projectPath": "c:\\Users\\gulli\\Documents\\Vefthjonustur\\VEFT-ASS4\\API\\API.csproj",
       "packagesPath": "C:\\Users\\gulli\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\gulli\\Documents\\Vefthjonustur\\VEFT-ASS4\\API\\obj\\",
+      "outputPath": "c:\\Users\\gulli\\Documents\\Vefthjonustur\\VEFT-ASS4\\API\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -12598,11 +12598,11 @@
       "frameworks": {
         "netcoreapp2.0": {
           "projectReferences": {
-            "C:\\Users\\gulli\\Documents\\Vefthjonustur\\VEFT-ASS4\\Models\\Models.csproj": {
-              "projectPath": "C:\\Users\\gulli\\Documents\\Vefthjonustur\\VEFT-ASS4\\Models\\Models.csproj"
+            "c:\\Users\\gulli\\Documents\\Vefthjonustur\\VEFT-ASS4\\Models\\Models.csproj": {
+              "projectPath": "c:\\Users\\gulli\\Documents\\Vefthjonustur\\VEFT-ASS4\\Models\\Models.csproj"
             },
-            "C:\\Users\\gulli\\Documents\\Vefthjonustur\\VEFT-ASS4\\Services\\Services.csproj": {
-              "projectPath": "C:\\Users\\gulli\\Documents\\Vefthjonustur\\VEFT-ASS4\\Services\\Services.csproj"
+            "c:\\Users\\gulli\\Documents\\Vefthjonustur\\VEFT-ASS4\\Services\\Services.csproj": {
+              "projectPath": "c:\\Users\\gulli\\Documents\\Vefthjonustur\\VEFT-ASS4\\Services\\Services.csproj"
             }
           }
         }
