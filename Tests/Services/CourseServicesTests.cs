@@ -30,7 +30,7 @@ namespace CoursesAPI.Tests.Services
 
 		private const int COURSEID_VEFT_20153 = 1337;
 		private const int COURSEID_VEFT_20163 = 1338;
-		private const int COURSEID_TOLH_20153 = 31337;
+		private const int COURSEID_TOLH_20171 = 31337;
 		private const int INVALID_COURSEID    = 9999;
 
 		[TestInitialize]
@@ -86,8 +86,8 @@ namespace CoursesAPI.Tests.Services
 				},
 				new CourseTemplate
 				{
-					CourseID	= "T-TOLH-111",
-					Description	= "uuu bitflippa maska off fuck ur mask off",
+					CourseID	= "T-111-TOLH",
+					Description	= "I thessum afanga verdur fjallad um bitflips",
 					Name		= "Tolvuhogun"
 				}
 			};
@@ -110,8 +110,8 @@ namespace CoursesAPI.Tests.Services
 				},
 				new CourseInstance
 				{
-					ID			= COURSEID_TOLH_20153,
-					CourseID	= "T-TOLH-111",
+					ID			= COURSEID_TOLH_20171,
+					CourseID	= "T-111-TOLH",
 					SemesterID	= "20153"
 				}
 			};
@@ -137,9 +137,9 @@ namespace CoursesAPI.Tests.Services
 				new TeacherRegistration
 				{
 					ID				 = 103,
-					CourseInstanceID = COURSEID_TOLH_20153,
+					CourseInstanceID = COURSEID_TOLH_20171,
 					SSN				 = SSN_GULLI,
-					Type			 = TeacherType.AssistantTeacher
+					Type			 = TeacherType.MainTeacher
 				}
 			};
 			#endregion
@@ -165,8 +165,8 @@ namespace CoursesAPI.Tests.Services
 			// Arrange:
 			var course = new CourseInstanceDTO
 			{
-				CourseInstanceID	= COURSEID_TOLH_20153,
-				TemplateID 			= "T-TOLH-111",
+				CourseInstanceID	= COURSEID_TOLH_20171,
+				TemplateID 			= "T-111-TOLH",
 				Name 			 	= "Tolvuhogun",
 				MainTeacher			= NAME_GULLI
 			};
@@ -180,17 +180,35 @@ namespace CoursesAPI.Tests.Services
 		}
 
 		// TODO!!! you should write more unit tests here!
+
+		/// <summary>
+		/// 
+		/// </summary>
 		[TestMethod]
 		public void GetCourseInstancesBySemester_ReturnsAllCoursesForSemester()
 		{
 			var course = _service.GetCourseInstancesBySemester("20153");
 			var courseData = _service.GetCourseInstancesBySemester("20153").SingleOrDefault(x => x.TemplateID == "T-514-VEFT");
 
-
 			Assert.AreEqual(course.Count(), 2);
 
 			Assert.AreEqual(COURSEID_VEFT_20153, courseData.CourseInstanceID);
 			Assert.AreEqual("Vefþjónustur", courseData.Name);
+
+			var invalidCourse = _service.GetCourseInstancesBySemester("696969");
+
+			Assert.AreEqual(invalidCourse.Count(), 0);
+
+		}
+		/// <summary>
+		/// 
+		/// </summary>
+		[TestMethod]
+		public void GetCourseInstancesBySemester_ReturnAllCoursesFor20153()
+		{
+			var course = _service.GetCourseInstancesBySemester();
+
+			var courseData = _service.GetCourseInstancesBySemester().SingleOrDefault(x => x.TemplateID == "VEFT-514-VEFT");
 
 		}
 		#endregion
