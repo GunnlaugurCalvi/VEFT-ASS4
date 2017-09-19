@@ -16,7 +16,11 @@ namespace CoursesAPI.Tests.Services
 		private MockUnitOfWork<MockDataContext> _mockUnitOfWork;
 		private CoursesServiceProvider _service;
 		private List<TeacherRegistration> _teacherRegistrations;
+		
 
+		/// <summary>
+		/// We added more data to the project 
+		/// </summary>
 		private const string SSN_DABS    = "1203735289";
 		private const string SSN_GUNNA   = "1234567890";
 		private const string SSN_ARNOR   = "1601872989";
@@ -170,7 +174,9 @@ namespace CoursesAPI.Tests.Services
 
 		#region GetCoursesBySemester
 		/// <summary>
-		/// TODO: implement this test, and several others!
+		/// This test return empty list if
+		/// functions have nothing defined 
+		/// if not than the tests will not pass
 		/// </summary>
 		[TestMethod]
 		public void GetCoursesBySemester_ReturnsEmptyListWhenNoDataDefined()
@@ -192,15 +198,14 @@ namespace CoursesAPI.Tests.Services
 			Assert.AreNotEqual(dto, empty);
 		}
 
-		// TODO!!! you should write more unit tests here!
-
 		/// <summary>
-		/// 
+		/// When specific semester is given 
+		/// the test should pass when all courses
+		/// for the given semester is returned
 		/// </summary>
 		[TestMethod]
 		public void GetCourseInstancesBySemester_ReturnsAllCoursesForSemester()
 		{
-
 			var course = _service.GetCourseInstancesBySemester("20171");
 			var courseData = _service.GetCourseInstancesBySemester("20171").SingleOrDefault(x => x.TemplateID == "T-111-TOLH");
 
@@ -215,7 +220,10 @@ namespace CoursesAPI.Tests.Services
 
 		}
 		/// <summary>
-		/// 
+		/// This test calls the function with no
+		/// parameter and by default it will search for 
+		/// semester 20153 and return all courses on
+		/// that semester
 		/// </summary>
 		[TestMethod]
 		public void GetCourseInstancesBySemester_ReturnAllCoursesFor20153()
@@ -227,7 +235,10 @@ namespace CoursesAPI.Tests.Services
 
 
 		/// <summary>
-		/// 
+		/// This test calls the function with
+		/// semester string in parameter and should 
+		/// return us the name of the main teacher of 
+		/// that course that is specified
 		/// </summary>
 		/// <param name="above"></param>
 		/// <returns></returns>
@@ -242,23 +253,15 @@ namespace CoursesAPI.Tests.Services
 		}
 
 		/// <summary>
-		/// Ensuring to return empty string if no main teacher
-		/// is found in course
+		/// This test checks when function is called with semester string
+		/// that if no Main teacher is teaching that course(weird)
 		/// </summary>
 		[TestMethod]
 		public void GetCourseInstancesBySemester_ReturnEmptyNameIfNoMainTeacher()
 		{
-		
-			// Act:
-			var EmptyMainTeacher = _service.GetCourseInstancesBySemester("20103");
-			var ContainsMainTeacher = _service.GetCourseInstancesBySemester("20171");
+			var NoName = _service.GetCourseInstancesBySemester("20103");
 
-			// Assert:
-			// Checking if main teacher returns empty string
-			Assert.AreEqual("", EmptyMainTeacher[0].MainTeacher);
-
-			// Checking if main teacher does not return empty string
-			Assert.AreEqual(NAME_GULLI, ContainsMainTeacher[0].MainTeacher);
+			Assert.AreEqual("", NoName[0].MainTeacher);
 		}
 		#endregion
 

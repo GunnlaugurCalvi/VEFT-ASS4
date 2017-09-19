@@ -177,23 +177,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\LAIART\\.nuget\\packages\\": {},
+    "C:\\Users\\gulli\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\LAIART\\Documents\\HR\\Vefþjónustur\\Verkefni4\\VEFT-ASS4\\Models\\Models.csproj",
+      "projectUniqueName": "c:\\Users\\gulli\\Documents\\Vefthjonustur\\VEFT-ASS4\\Models\\Models.csproj",
       "projectName": "Models",
-      "projectPath": "C:\\Users\\LAIART\\Documents\\HR\\Vefþjónustur\\Verkefni4\\VEFT-ASS4\\Models\\Models.csproj",
-      "packagesPath": "C:\\Users\\LAIART\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\LAIART\\Documents\\HR\\Vefþjónustur\\Verkefni4\\VEFT-ASS4\\Models\\obj\\",
+      "projectPath": "c:\\Users\\gulli\\Documents\\Vefthjonustur\\VEFT-ASS4\\Models\\Models.csproj",
+      "packagesPath": "C:\\Users\\gulli\\.nuget\\packages\\",
+      "outputPath": "c:\\Users\\gulli\\Documents\\Vefthjonustur\\VEFT-ASS4\\Models\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\LAIART\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\gulli\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
