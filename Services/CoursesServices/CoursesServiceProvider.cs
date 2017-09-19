@@ -121,7 +121,7 @@ namespace CoursesAPI.Services.CoursesServices
 				course.MainTeacher = (
 					from p in _persons.All()
 					join tr in _teacherRegistrations.All() on p.SSN equals tr.SSN
-					where tr.CourseInstanceID == course.CourseInstanceID &&
+					where tr.CourseInstanceID == course.CourseInstanceID && 
 					tr.Type.Equals(1)
 					select p.Name
 				).SingleOrDefault() ?? "";
