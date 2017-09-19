@@ -120,6 +120,11 @@ namespace CoursesAPI.Services.CoursesServices
 			return courses;
 		}
 
+		/// <summary>
+		/// Retrieves the name of the main teacher for a specified course
+		/// </summary>
+		/// <param name="CourseInstanceID"></param>
+		/// <returns>string MainTeacherName</returns>
 		private string GetMainTeacher(int CourseInstanceID)
         {
             string MainTeacherName = (from t in _teacherRegistrations.All()

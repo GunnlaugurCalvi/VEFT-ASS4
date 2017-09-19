@@ -200,6 +200,7 @@ namespace CoursesAPI.Tests.Services
 		[TestMethod]
 		public void GetCourseInstancesBySemester_ReturnsAllCoursesForSemester()
 		{
+
 			var course = _service.GetCourseInstancesBySemester("20171");
 			var courseData = _service.GetCourseInstancesBySemester("20171").SingleOrDefault(x => x.TemplateID == "T-111-TOLH");
 
@@ -240,12 +241,24 @@ namespace CoursesAPI.Tests.Services
 
 		}
 
+		/// <summary>
+		/// Ensuring to return empty string if no main teacher
+		/// is found in course
+		/// </summary>
 		[TestMethod]
 		public void GetCourseInstancesBySemester_ReturnEmptyNameIfNoMainTeacher()
 		{
-			var NoName = _service.GetCourseInstancesBySemester("20103");
+		
+			// Act:
+			var EmptyMainTeacher = _service.GetCourseInstancesBySemester("20103");
+			var ContainsMainTeacher = _service.GetCourseInstancesBySemester("20171");
 
-			Assert.AreEqual("", NoName[0].MainTeacher);
+			// Assert:
+			// Checking if main teacher returns empty string
+			Assert.AreEqual("", EmptyMainTeacher[0].MainTeacher);
+
+			// Checking if main teacher does not return empty string
+			Assert.AreEqual(NAME_GULLI, ContainsMainTeacher[0].MainTeacher);
 		}
 		#endregion
 
