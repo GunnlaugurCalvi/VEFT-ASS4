@@ -7582,7 +7582,7 @@
       ]
     },
     "Remotion.Linq/2.1.1": {
-      "sha512": "IJn0BqkvwEDpP+2qjvci7n4/a9f7DhKESLWb2/uG4xQh3rTkGTBUz69bI4IivCoKkTFAqjXxYDZw2K/npohjsw==",
+      "sha512": "+HdfStb1gsTbtLzDiHuw+JPgQCfrSWddDZlHS/5Jr974BuNyiddjpF8BUUaCWBYDPrZiXfVAekXw0IMpZUKD6g==",
       "type": "package",
       "path": "remotion.linq/2.1.1",
       "files": [
@@ -9872,7 +9872,7 @@
       ]
     },
     "System.Net.Security/4.3.0": {
-      "sha512": "IgJKNfALqw7JRWp5LMQ5SWHNKvXVz094U6wNE3c1i8bOkMQvgBL+MMQuNt3xl9Qg9iWpj3lFxPZEY6XHmROjMQ==",
+      "sha512": "SJ9JohyG7pMm12cMy4wVxGYWjo54rr4Os4Q5qP5+4ue7CK7VABiimGXy2dfTaTJhBoAlriouaifeGjTIzWsCEQ==",
       "type": "package",
       "path": "system.net.security/4.3.0",
       "files": [
@@ -12569,23 +12569,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\gulli\\.nuget\\packages\\": {},
+    "C:\\Users\\LAIART\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "c:\\Users\\gulli\\Documents\\Vefthjonustur\\VEFT-ASS4\\API\\API.csproj",
+      "projectUniqueName": "c:\\Users\\LAIART\\Documents\\HR\\Vefþjónustur\\Verkefni4\\VEFT-ASS4\\API\\API.csproj",
       "projectName": "API",
-      "projectPath": "c:\\Users\\gulli\\Documents\\Vefthjonustur\\VEFT-ASS4\\API\\API.csproj",
-      "packagesPath": "C:\\Users\\gulli\\.nuget\\packages\\",
-      "outputPath": "c:\\Users\\gulli\\Documents\\Vefthjonustur\\VEFT-ASS4\\API\\obj\\",
+      "projectPath": "c:\\Users\\LAIART\\Documents\\HR\\Vefþjónustur\\Verkefni4\\VEFT-ASS4\\API\\API.csproj",
+      "packagesPath": "C:\\Users\\LAIART\\.nuget\\packages\\",
+      "outputPath": "c:\\Users\\LAIART\\Documents\\HR\\Vefþjónustur\\Verkefni4\\VEFT-ASS4\\API\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\gulli\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\LAIART\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -12598,11 +12598,11 @@
       "frameworks": {
         "netcoreapp2.0": {
           "projectReferences": {
-            "c:\\Users\\gulli\\Documents\\Vefthjonustur\\VEFT-ASS4\\Models\\Models.csproj": {
-              "projectPath": "c:\\Users\\gulli\\Documents\\Vefthjonustur\\VEFT-ASS4\\Models\\Models.csproj"
+            "c:\\Users\\LAIART\\Documents\\HR\\Vefþjónustur\\Verkefni4\\VEFT-ASS4\\Models\\Models.csproj": {
+              "projectPath": "c:\\Users\\LAIART\\Documents\\HR\\Vefþjónustur\\Verkefni4\\VEFT-ASS4\\Models\\Models.csproj"
             },
-            "c:\\Users\\gulli\\Documents\\Vefthjonustur\\VEFT-ASS4\\Services\\Services.csproj": {
-              "projectPath": "c:\\Users\\gulli\\Documents\\Vefthjonustur\\VEFT-ASS4\\Services\\Services.csproj"
+            "c:\\Users\\LAIART\\Documents\\HR\\Vefþjónustur\\Verkefni4\\VEFT-ASS4\\Services\\Services.csproj": {
+              "projectPath": "c:\\Users\\LAIART\\Documents\\HR\\Vefþjónustur\\Verkefni4\\VEFT-ASS4\\Services\\Services.csproj"
             }
           }
         }
