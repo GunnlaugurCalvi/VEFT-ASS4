@@ -114,35 +114,21 @@ namespace CoursesAPI.Services.CoursesServices
 					Name               = ct.Name,
 					TemplateID         = ct.CourseID,
 					CourseInstanceID   = c.ID,
-					MainTeacher        = GetMainTeacherInCourse(c.ID)
+					MainTeacher        = GetMainTeacher(c.ID)
 				}).ToList();
 
-			// foreach(var course in courses){				 
-			// 	course.MainTeacher = (
-			// 		from p in _persons.All()
-			// 		join tr in _teacherRegistrations.All() on p.SSN equals tr.SSN
-			// 		where tr.CourseInstanceID == course.CourseInstanceID 
-			// 		select p.Name
-			// 	).SingleOrDefault() ?? "";
-			// }
 			return courses;
 		}
 
-		private string GetMainTeacherInCourse(int CourseInstanceID)
+		private string GetMainTeacher(int CourseInstanceID)
         {
-            string mainTeacherSSN = (from t in _teacherRegistrations.All()
-                                     where t.CourseInstanceID == CourseInstanceID
+            string MainTeacherName = (from t in _teacherRegistrations.All()
+									join p in _persons.All() on t.SSN equals p.SSN
+                                    where t.CourseInstanceID == CourseInstanceID
                                          && t.Type == TeacherType.MainTeacher
-                                     select t.SSN).FirstOrDefault();
-			return GetTeacherNameBySSN(mainTeacherSSN);
-        }
+                                    select p.Name).SingleOrDefault() ?? "";
 
-		private string GetTeacherNameBySSN(string SSN)
-        {
-            string name = (from p in _persons.All()
-                           where p.SSN == SSN
-                           select p.Name).FirstOrDefault() ?? "";
-            return name;
+			return MainTeacherName;
         }
 	}
 }
